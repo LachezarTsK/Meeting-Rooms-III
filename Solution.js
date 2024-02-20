@@ -16,8 +16,8 @@ var mostBooked = function (numberOfRooms, meetingIntervals) {
     //PriorityQueue<Room>
     this.minHeapEndTimeOccupiedRooms = new MinPriorityQueue({compare:
                 (x, y) => x.endTimeMeeting === y.endTimeMeeting
-                    ? x.index - y.index
-                    : x.endTimeMeeting - y.endTimeMeeting});
+                        ? x.index - y.index
+                        : x.endTimeMeeting - y.endTimeMeeting});
 
     this.numberOfMeetingsPerRoom = new Array(numberOfRooms).fill(0);
 
